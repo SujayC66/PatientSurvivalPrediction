@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>PATIENT SURVIVAL PREDICTION</h1>
+    <form action="/psp" method="POST" >
+        apache_4a_icu_death_prob:<input type="number" name="a"> <br><br>
+        apache_4a_hospital_death_prob:<input type="number" name="b" > <br><br>
+        apache_3j_diagnosis :<input type="number" name="c"> <br><br>
+        age:<input type="number" name="d"> <br><br>
+        bmi:<input type="number" name="e"> <br><br>
+        ventilated_apache:<input type="number" name="f"> <br><br>
+        gender:<input type="number" name="g" > <br><br>
+        apache_2_diagnosis:<input type="number" name="h"> <br><br>
+        heart_rate_apache:<input type="number" name="i"> <br><br>
+        d1_spo2_min:<input type="number" name="j"> <br><br>
+        d1_heartrate_min:<input type="number" name="k"> <br><br>
+
+        <input type="submit" value="predict">
+    </form>
+    {{pred}}
+</body>
+</html>
